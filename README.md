@@ -35,7 +35,7 @@ Key commands:
     
 ## Install
 
-### 1. Build from source code(https://github.com/genome/genome/)
+### 1. Build from source code
 
 Install some packaged prerequisites, and their nested dependencies:
 ```
@@ -64,7 +64,7 @@ export PATH=/path/to/samtools-0.1.19:$PATH
 source ~/.bashrc 
 ```
 
-Download the latest joinx stable release, solve some build dependencies, and then build and install it:
+Download the latest joinx stable release, and then build and install it:
 
 ```
 git clone https://github.com/genome/joinx.git
@@ -110,7 +110,7 @@ sudo cpanm Scope::Guard
 sudo cpanm Regexp::Common
 ```
 
-Note: If other perl modules are missing during installation, simply install them using the `sudo cpanm XXX`
+Note: If other perl modules are missing during installation, simply install them using the `sudo cpanm XXX`.
 
 Clone the genome master branch:
 
@@ -127,7 +127,7 @@ Note: When running `genome music`, if you are prompted with error messages that 
 export XGENOME_CONFIG_SNAP=/path/to/genome/etc
 ```
 
-### 2. Download and build the GMS (https://github.com/genome/gms)
+### 2. Download and build the GMS
 
 Note: To install the GMS you will need root/sudo access and a fast internet connection to download all packages and demonstration data sets .It only runs on Ubuntu 12.04 Precise operating system.
 
@@ -143,7 +143,7 @@ gmt music --help
 
 Installation on another platform (Mac OS X, Linux distributions other than Ubuntu 12.04) requires a virtual machine (VM). See the https://github.com/genome/gms/wiki/Install for detailed operation process.
 
-### 3. Quick VM Tour(https://github.com/genome/gms/wiki/Quick-VM-Tour)
+### 3. Quick VM Tour
 
 ## Introduction
 
@@ -172,3 +172,5 @@ Import the gms_vm_v1.vdi image file into the Virtualbox virtual machine.
 Step 5. Start the GMS system:
 
 Open the terminal and input `gmt music --help` to check the help information after entering the system.
+
+Note: See the https://github.com/genome/gms/wiki/Quick-VM-Tour for detailed operation process.
