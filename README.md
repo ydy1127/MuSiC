@@ -145,11 +145,11 @@ Installation on another platform (Mac OS X, Linux distributions other than Ubunt
 
 ### 3. Quick VM Tour
 
-## Introduction
+##### Introduction
 
 The simplest way to get a quick sense of what the GMS is all about is to try loading a virtual machine where the GMS has already been installed and configured. When the GMS virtual machine loads you will be logged in as the user `genome` (with a password that is also `genome`). All installation and configuration steps will be complete and demonstration data will be in place. 
 
-## Steps
+##### Steps
 
 Step 1. Install VirtualBox:
 
