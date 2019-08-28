@@ -38,18 +38,20 @@ Key commands:
 ### 1. Build from source code
 
 Install some packaged prerequisites, and their nested dependencies:
-
-        sudo apt-get install gcc \
-        make \
-        git \
-        cmake \
-        curl \
-        cpanminus 
-        libbz2-dev \
-        r-base-core \
-        libexpat1-dev \
-        zlib1g-dev 
-
+```
+sudo apt-get install gcc \
+make \
+git \
+cmake \
+curl \
+cpanminus \
+libbz2-dev \
+r-base-core \
+libexpat1-dev \
+zlib1g-dev \
+build-essential \
+libgtest-dev
+```
 
 Install samtools ( Download the samtools-0.1.19 from SOURCEFORGE )
 
@@ -117,6 +119,12 @@ git clone https://github.com/genome/genome.git
 sudo apt install libgenome-perl
 cd genome/lib/perl/
 genome music --help
+```
+
+Note: When running `genome music`, if you are prompted with error messages that some  parameters cannot be located, you need to add an environment variable:
+
+```
+export XGENOME_CONFIG_SNAP=/path/to/genome/etc
 ```
 
 
