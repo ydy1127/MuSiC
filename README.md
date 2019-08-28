@@ -35,5 +35,16 @@ Key commands:
     
 ## Install
 
-### 1.Build from source code
+### 1. Build from source code
 
+Install some packaged prerequisites, and their nested dependencies:
+
+        sudo apt-get install build-essential \
+        git \
+        cmake \
+        curl \
+        cpanminus
+        libbz2-dev \
+        libgtest-dev \
+        libbam-dev \
+        zlib1g-dev 
