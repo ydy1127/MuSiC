@@ -1,8 +1,8 @@
-MuSiC
+# MuSiC
 ===========
 MuSiC: Identifying mutational significance in cancer genomes
 
-Introduction
+## Introduction
 -----
 The Mutational Significance In Cancer (MuSiC) consists of downstream analysis tools that can:
 
@@ -14,7 +14,7 @@ The Mutational Significance In Cancer (MuSiC) consists of downstream analysis to
 6. Cross-reference findings with relevant databases such as Pfam, COSMIC, and OMIM<br>
 7. Generate typical visualizations like Kaplan-Meier survival estimates, and mutation status matrices<br>
 
-Usage
+## Usage
 -----
 Key commands:
 
@@ -36,5 +36,7 @@ Key commands:
     
     help                        this message
     
-Install(Ubuntu)
+## Install
+-----
+### 1.Build from source code
 -----
