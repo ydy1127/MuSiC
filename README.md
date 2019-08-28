@@ -35,7 +35,7 @@ Key commands:
     
 ## Install
 
-### 1. Build from source code
+### 1. Build from source code(https://github.com/genome/genome/)
 
 Install some packaged prerequisites, and their nested dependencies:
 ```
@@ -127,7 +127,48 @@ Note: When running `genome music`, if you are prompted with error messages that 
 export XGENOME_CONFIG_SNAP=/path/to/genome/etc
 ```
 
+### 2. Download and build the GMS (https://github.com/genome/gms)
 
+Note: To install the GMS you will need root/sudo access and a fast internet connection to download all packages and demonstration data sets .It only runs on Ubuntu 12.04 Precise operating system.
 
+For a standard, standalone, configuration on Ubuntu 12.04 run:
 
+```
+sudo apt-get install git ssh make
+git clone https://github.com/genome/gms.git
+cd gms
+make
+gmt music --help
+```
 
+Installation on another platform (Mac OS X, Linux distributions other than Ubuntu 12.04) requires a virtual machine (VM). See the https://github.com/genome/gms/wiki/Install for detailed operation process.
+
+### 3. Quick VM Tour(https://github.com/genome/gms/wiki/Quick-VM-Tour)
+
+## Introduction
+
+The simplest way to get a quick sense of what the GMS is all about is to try loading a virtual machine where the GMS has already been installed and configured. When the GMS virtual machine loads you will be logged in as the user `genome` (with a password that is also `genome`). All installation and configuration steps will be complete and demonstration data will be in place. 
+
+## Steps
+
+Step 1. Install VirtualBox:
+
+Download the latest version Virtualbox from https://www.virtualbox.org/wiki/Downloads.
+
+Step 2. Download a Pre-configured GMS VirtualMachine Image:
+
+Download the GMS_VM_V1.tar.gz from https://xfer.genome.wustl.edu/gxfer1/project/gms/vms/ .
+
+Note: The size of this file is about 50G. It will take some time to download.
+
+Step 3. Unpack the Image:
+
+Use your favorite decompression software to unpack the virtual machine.
+
+Step 4.  Import the Image:
+
+Import the gms_vm_v1.vdi image file into the Virtualbox virtual machine.
+
+Step 5. Start the GMS system:
+
+Open the terminal and input `gmt music --help` to check the help information after entering the system.
