@@ -4,13 +4,13 @@ MuSiC: Identifying mutational significance in cancer genomes
 ## Introduction
 The Mutational Significance In Cancer (MuSiC) consists of downstream analysis tools that can:
 
-1. Apply statistical methods to identify significantly mutated genes<br>
-2. Highlight significantly altered pathways<br>
-3. Investigate the proximity of amino acid mutations in the same gene<br>
-4. Search for gene-based or site-based correlations to mutations and relationships between mutations themselves<br>
-5. Correlate mutations to clinical features, using typical correlation measures, and generalized linear models<br>
-6. Cross-reference findings with relevant databases such as Pfam, COSMIC, and OMIM<br>
-7. Generate typical visualizations like Kaplan-Meier survival estimates, and mutation status matrices<br>
+1. Apply statistical methods to identify significantly mutated genes;<br>
+2. Highlight significantly altered pathways;<br>
+3. Investigate the proximity of amino acid mutations in the same gene;<br>
+4. Search for gene-based or site-based correlations to mutations and relationships between mutations themselves;<br>
+5. Correlate mutations to clinical features, using typical correlation measures, and generalized linear models;<br>
+6. Cross-reference findings with relevant databases such as Pfam, COSMIC, and OMIM;<br>
+7. Generate typical visualizations like Kaplan-Meier survival estimates, and mutation status matrices;<br>
 
 ## Usage
 Key commands:
@@ -34,6 +34,12 @@ Key commands:
     help                        this message
     
 ## Install
+
+There are three ways to install and deploy MuSiC:
+
+- Build from *genome* source code
+- Download and build the GMS and run MuSiC from it
+- Download the GMS image file and use GMS quickly
 
 ### 1. Build from source code
 
@@ -165,7 +171,7 @@ Step 3. Unpack the Image:
 
 Use your favorite decompression software to unpack the virtual machine.
 
-Step 4.  Import the Image:
+Step 4. Import the Image:
 
 Import the gms_vm_v1.vdi image file into the Virtualbox virtual machine.
 
@@ -174,3 +180,13 @@ Step 5. Start the GMS system:
 Open the terminal and input `gmt music --help` to check the help information after entering the system.
 
 Note: See the https://github.com/genome/gms/wiki/Quick-VM-Tour for detailed operation process.
+
+### Compare the above three methods:
+
+1. Build genome source code using MuSiC, the installation process is complex due to the large number of dependencies.MuSiC is encapsulated in genome. Once the source code of genome is changed by the developers, there may be problems running MuSiC.However, this method occupies less memory and is compatible with various systems.
+
+2. Download and build GMS, which requires Ubuntu 12.04 as the system is very limited.But the installation process is simple.
+
+3. Directly download the mirror file of GMS, although the installation and deployment is the simplest, it takes up a lot of memory space.
+
+Several approaches have advantages and disadvantages.You can choose your own installation method according to your own requirements and hardware resources.
