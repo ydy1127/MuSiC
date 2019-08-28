@@ -39,12 +39,87 @@ Key commands:
 
 Install some packaged prerequisites, and their nested dependencies:
 
-        sudo apt-get install build-essential \
+        sudo apt-get install gcc \
+        make \
         git \
         cmake \
         curl \
-        cpanminus
+        cpanminus 
         libbz2-dev \
-        libgtest-dev \
-        libbam-dev \
+        r-base-core \
+        libexpat1-dev \
         zlib1g-dev 
+
+
+Install samtools ( Download the samtools-0.1.19 from SOURCEFORGE )
+
+```
+wget https://sourceforge.net/projects/samtools/files/samtools/0.1.19/samtools-0.1.19.tar.bz2
+tar jxf samtools-0.1.19.tar.bz2
+cd samtools-0.1.19 
+make
+export PATH=/path/to/samtools-0.1.19:$PATH
+source ~/.bashrc 
+```
+
+Download the latest joinx stable release, solve some build dependencies, and then build and install it:
+
+```
+git clone https://github.com/genome/joinx.git
+cd joinx
+mkdir build
+cd build
+cmake /path/to/joinx/ -DBOOST_BUILD_OPTS="-j 8" -DCMAKE_INSTALL_PREFIX=/path/to/build
+make deps 
+make
+ctest 
+make install 
+export PATH=/path/to/joinx/bin:$PATH
+source ~/.bashrc
+```
+
+Note: A problem occurs during the execution of the above `make` command. Fix joinx bugs:
+
+```
+Line 9 in the /joinx/src/lib/io/StreamLineSource.cpp
+bool StreamLineSource::getline(std::string& line) {
+	std::getline(_in, line);
+   	return true;
+}
+```
+```
+Line 1178 in the /vendor/src/gtest160/include/gtest/internal/gtest-internal.h
+if (const ::testing::AssertionResult gtest_ar_ = \
+	::testing::AssertionResult(bool(expression))) \
+	; \
+```
+Install some prerequisite Perl modules:
+
+```
+sudo cpanm Bit::Vector
+sudo cpanm Text::CSV_XS
+sudo cpanm Statistics::Distributions
+sudo cpanm Statistics::Descriptive
+sudo cpanm PDL::Stats::Basic
+sudo cpanm Mouse
+sudo cpanm YAML::Syck
+sudo cpanm Set::Scalar
+sudo cpanm Scope::Guard
+sudo cpanm Regexp::Common
+```
+
+Note: If other perl modules are missing during installation, simply install them using the `sudo cpanm XXX`
+
+Clone the genome master branch:
+
+```
+git clone https://github.com/genome/genome.git
+sudo apt install libgenome-perl
+cd genome/lib/perl/
+genome music --help
+```
+
+
+
+
+
