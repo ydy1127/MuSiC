@@ -1,4 +1,4 @@
-MuSiC
+# MuSiC
 
 MuSiC: Identifying mutational significance in cancer genomes
 
