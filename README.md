@@ -10,7 +10,7 @@ The Mutational Significance In Cancer (MuSiC) consists of downstream analysis to
 4. Search for gene-based or site-based correlations to mutations and relationships between mutations themselves;<br>
 5. Correlate mutations to clinical features, using typical correlation measures, and generalized linear models;<br>
 6. Cross-reference findings with relevant databases such as Pfam, COSMIC, and OMIM;<br>
-7. Generate typical visualizations like Kaplan-Meier survival estimates, and mutation status matrices;<br>
+7. Generate typical visualizations like Kaplan-Meier survival estimates, and mutation status matrices.<br>
 
 ## Usage
 Key commands:
@@ -185,7 +185,7 @@ Note: See the https://github.com/genome/gms/wiki/Quick-VM-Tour for detailed oper
 
 1. The installation process using the MuSiC by building *genome* source code is complex due to the large number of dependencies. However, this method occupies less memory and is compatible with multiple versions of the Linux operating system;
 
-2. Download and build the GMS, which only runs on Ubuntu 12.04, so the application environment is very limited.But the installation process is simple.
+2. Download and build the GMS, which only runs on Ubuntu 12.04, so the application environment is very limited.But the installation process is simple;
 
 3. Directly download the mirror file of GMS, although the installation and deployment is the simplest, it takes up a lot of memory space.
 
