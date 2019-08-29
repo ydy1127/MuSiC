@@ -41,7 +41,7 @@ There are three ways to install and deploy MuSiC:
 - Download and build the GMS and run MuSiC from it
 - Download the GMS image file and use GMS quickly
 
-### 1. Build from source code
+#### 1. Build from source code
 
 Install some packaged prerequisites, and their nested dependencies:
 ```
@@ -133,7 +133,7 @@ Note: When running `genome music`, if you are prompted with error messages that 
 export XGENOME_CONFIG_SNAP=/path/to/genome/etc
 ```
 
-### 2. Download and build the GMS
+#### 2. Download and build the GMS
 
 Note: To install the GMS you will need root/sudo access and a fast internet connection to download all packages and demonstration data sets .It only runs on Ubuntu 12.04 Precise operating system.
 
@@ -149,13 +149,13 @@ gmt music --help
 
 Installation on another platform (Mac OS X, Linux distributions other than Ubuntu 12.04) requires a virtual machine (VM). See the https://github.com/genome/gms/wiki/Install for detailed operation process.
 
-### 3. Quick VM Tour
+#### 3. Quick VM Tour
 
-##### Introduction
+#### Introduction
 
 The simplest way to get a quick sense of what the GMS is all about is to try loading a virtual machine where the GMS has already been installed and configured. When the GMS virtual machine loads you will be logged in as the user `genome` (with a password that is also `genome`). All installation and configuration steps will be complete and demonstration data will be in place. 
 
-##### Steps
+#### Steps
 
 Step 1. Install VirtualBox:
 
