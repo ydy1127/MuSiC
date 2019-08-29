@@ -181,11 +181,11 @@ Open the terminal and input `gmt music --help` to check the help information aft
 
 Note: See the https://github.com/genome/gms/wiki/Quick-VM-Tour for detailed operation process.
 
-### Compare the above three methods:
+#### Compare the above three methods:
 
-1. Build genome source code using MuSiC, the installation process is complex due to the large number of dependencies.MuSiC is encapsulated in genome. Once the source code of genome is changed by the developers, there may be problems running MuSiC.However, this method occupies less memory and is compatible with various systems.
+1. The installation process using the MuSiC by building *genome* source code is complex due to the large number of dependencies. However, this method occupies less memory and is compatible with multiple versions of the Linux operating system;
 
-2. Download and build GMS, which requires Ubuntu 12.04 as the system is very limited.But the installation process is simple.
+2. Download and build the GMS, which only runs on Ubuntu 12.04, so the application environment is very limited.But the installation process is simple.
 
 3. Directly download the mirror file of GMS, although the installation and deployment is the simplest, it takes up a lot of memory space.
 
