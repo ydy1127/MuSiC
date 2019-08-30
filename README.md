@@ -212,7 +212,7 @@ Note: See the https://github.com/genome/gms/wiki/Quick-VM-Tour for detailed oper
 
 ## Example
 
- Count covered bases per-gene for each given tumor-normal pair of BAMs
+ Count covered bases per-gene for each given tumor-normal pair of BAMs:
 
 ```
 genome music bmr calc-covg --roi-file example.roi_file --bam-list example.bam_list_test --reference-sequence fetch_chr_ucsc.hg19.fasta --output-dir ./
