@@ -58,17 +58,17 @@ There are three methods to install and deploy MuSiC:
 
 #### Comparison of three methods:
 
-- Method 1: The installation process by the Method 1 is complex due to the large number of dependencies. However, this method occupies less memory and is compatible with multiple versions of the Linux operating system;
+- Method 1: The installation process by the Method 1 is complex due to the large number of dependencies. However, this method occupies less memory (about 1G) and is compatible with multiple versions of the Linux operating system;
 
 - Method 2: Download and build the GMS, which only runs on Ubuntu 12.04, so the application environment is very limited. But the installation process is simple;
 
-- Method 3: Directly download the image file of GMS, although the installation and deployment is the simplest, it takes up a lot of memory space.
+- Method 3: Directly download the image file of GMS, although the installation and deployment is the simplest, it takes up a lot of memory space (at least 50G).
 
 Several approaches have advantages and disadvantages. You can choose the appropriate installation method based on your requirements and hardware resources.
 
 #### 1. Build from source code
 
-Prerequisites for OS： Existing Ubuntu distributions
+Prerequisites for OS: Existing Ubuntu distributions
 
 Install some prerequisites, and their nested dependencies:
 
@@ -157,7 +157,7 @@ cd genome/lib/perl/
 genome music --help
 ```
 
-Note: When running `genome music`, if you are prompted with error messages that some  parameters cannot be located, you need to add an environment variable:
+Note: When running `genome music`, if you are prompted with error messages that some parameters cannot be located, you need to add an environment variable:
 
 ```
 export XGENOME_CONFIG_SNAP=/path/to/genome/etc
@@ -165,9 +165,9 @@ export XGENOME_CONFIG_SNAP=/path/to/genome/etc
 
 #### 2. Download and build the GMS
 
-GMS( Genome Modeling System ) is a knowledge management platform for genomics. GMS provides many tools for genome modeling, such as MuSiC.
+GMS(Genome Modeling System) is a knowledge management platform for genomics. GMS provides many tools for genome modeling, such as MuSiC.
 
-Note: To install the GMS you will need root/sudo access and a fast internet connection to download all packages and demonstration data sets .It only runs on Ubuntu 12.04 Precise operating system.
+Note: To install the GMS you will need root/sudo access and a fast internet connection to download all packages and demonstration data sets. It only runs on Ubuntu 12.04 Precise operating system.
 
 For a standard, standalone, configuration on Ubuntu 12.04 run:
 
@@ -184,7 +184,6 @@ Installation on another platform (Mac OS X, Linux distributions other than Ubunt
 #### 3. Import the GMS image file into the VM
 
 
-
 The easiest way to quickly use the tools in the GMS is to try to load a virtual machine that has been installed and configured with the GMS. When you launch the GMS system, you will login with the username "genome" (password is also "genome"). Specific installation steps are as follows:
 
 **Step 1. Install VirtualBox:**
@@ -193,7 +192,7 @@ Download the latest version Virtualbox from https://www.virtualbox.org/wiki/Down
 
 **Step 2. Download a Pre-configured GMS VirtualMachine Image:**
 
-Download the GMS_VM_V1.tar.gz from https://xfer.genome.wustl.edu/gxfer1/project/gms/vms/ .
+Download the GMS_VM_V1.tar.gz from https://xfer.genome.wustl.edu/gxfer1/project/gms/vms/.
 
 Note: The size of this file is about 50G. It will take some time to download.
 
@@ -216,7 +215,11 @@ Note: See the https://github.com/genome/gms/wiki/Quick-VM-Tour for detailed oper
  Count covered bases per-gene for each given tumor-normal pair of BAMs
 
 ```
-genome/gmt music bmr calc-covg --roi-file example.roi_file --bam-list example.bam_list_test --reference-sequence fetch_chr_ucsc.hg19.fasta --output-dir ./
+genome music bmr calc-covg --roi-file example.roi_file --bam-list example.bam_list_test --reference-sequence fetch_chr_ucsc.hg19.fasta --output-dir ./
+```
+or
+```
+gmt music bmr calc-covg --roi-file example.roi_file --bam-list example.bam_list_test --reference-sequence fetch_chr_ucsc.hg19.fasta --output-dir ./
 ```
 
 ```
