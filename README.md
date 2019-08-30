@@ -53,7 +53,7 @@ help                        this message
 There are three methods to install and deploy MuSiC:
 
 - Method 1: Build from source code(https://github.com/genome/genome)
-- Method 2: Download and build the GMS (https://github.com/genome/gms.git)
+- Method 2: Download and build the GMS (https://github.com/genome/gms)
 - Method 3: Import the GMS image file into the VM(https://github.com/genome/gms/wiki/Quick-VM-Tour)
 
 #### Comparison of three methods:
